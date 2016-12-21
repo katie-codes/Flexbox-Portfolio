@@ -1,0 +1,75 @@
+
+/* Mobile version  */
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+ .header, .about {
+	height: 250px;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	flex-direction: column;
+}
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: gray;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+.about {
+	height: 200px;
+	background-color: blue;
+}
+
+.menu {
+	height: 50px;
+	width: 100%;
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.portfolio-item {
+	height: 300px;
+	width: 100%;
+	margin: 0;
+}
+
+.portfolio-item img {
+		width: 100%;
+
+}
+
+/* Tablets */
+
+
+@media screen and (min-width: 600px) {
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row; 
+	}
+	.portfolio-item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.portfolio-item {
+		width: calc(100% / 3);
+	}} 
